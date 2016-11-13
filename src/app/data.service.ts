@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Injectable } from '@angular/core';
 import { Delkrav } from './delkrav';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class DataService {
@@ -34,7 +35,7 @@ export class DataService {
   createDelkrav(delkrav: Delkrav) {
     console.log('lägger till delkrav');
 
-    this.http.post(`${this.baseUrl}/delkrav`, JSON.stringify(d))
+    this.http.post(`${this.baseUrl}/delkrav`, JSON.stringify(delkrav))
       .map(response => response.json()).subscribe(data => {
         this.delkravStore.delkrav.push(delkrav);  
         this._delkrav.next(Object.assign({}, this.delkravStore).delkrav);

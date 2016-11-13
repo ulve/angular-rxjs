@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+	color: #CC4425;
+	font-family: 'Oswald';
+	font-size: 4rem;
+	font-weight: 600;
+	line-height: 5rem;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+}
+
+p {
+	color: #3E4147;
+	font-family: 'Arvo';
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: -0.01rem;
+	margin-bottom: 3rem;
+}
+
+
+ul {
+    color: #3E4147;
+	font-family: 'Arvo';
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: -0.01rem;
+	margin-bottom: 3rem;
+}
+
+li {
+     color: #3E4147;
+	font-family: 'Arvo';
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: -0.01rem;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.component {
+    width: 20rem;
+    padding: 1em;
+    border-radius: 0.5rem;
+    margin: 1em;
+    border: thin solid #D5D5D5;
+    position: relative;
+    min-height: 20rem;
+    -webkit-box-shadow: 6px 6px 3px 0px rgba(224,224,224,1);
+    -moz-box-shadow: 6px 6px 3px 0px rgba(224,224,224,1);
+    box-shadow: 6px 6px 3px 0px rgba(224,224,224,1);
+}
+
+.component--new {
+    -webkit-box-shadow: 12px 12px 3px 0px rgba(235,209,170,1);
+    -moz-box-shadow: 12px 12px 3px 0px rgba(235,209,170,1);
+    box-shadow: 12px 12px 3px 0px rgba(235,209,170,1);
+}
+
+.component__header {
+    color: #CC4425;
+	font-family: 'Oswald';
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 3rem;
+	margin-bottom: 3rem;	
+    margin-top: 0;
+    border-bottom: thin solid #CC4425;
+    padding-bottom: 0.5rem;
+}
+
+.component__header--new {
+    color:darkorange;
+    border-color: darkorange;
+}
+
+.component__button {
+    display: inline-block;
+	border-radius: 0.3rem;
+	padding: 0.5rem 1rem;
+	border: solid thin #D5D5D5;
+	background-image: linear-gradient(#EEE, #DDD);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+	font: 700 13px/18px Helvetica, arial;
+}
+
+.component__button--success {
+    color: #FFF;
+	background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+	border-color: #4A993E;
+}
+
+.component__button--danger {
+    color: #900;
+}
