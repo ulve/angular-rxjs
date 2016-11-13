@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DelkravComponent } from './delkrav/delkrav.component';
+import { Delkrav2Component } from './delkrav2/delkrav2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DelkravComponent
+    DelkravComponent,
+    Delkrav2Component
   ],
   imports: [
     BrowserModule,
