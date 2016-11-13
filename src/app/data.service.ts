@@ -30,4 +30,15 @@ export class DataService {
       }, error => console.log('Kunde inte ladda delkrav.'), 
          ()    => console.log('Klar!'));     
   }
+
+  createDelkrav(delkrav: Delkrav) {
+    console.log('lägger till delkrav');
+
+    this.http.post(`${this.baseUrl}/delkrav`, JSON.stringify(d))
+      .map(response => response.json()).subscribe(data => {
+        this.delkravStore.delkrav.push(delkrav);  
+        this._delkrav.next(Object.assign({}, this.delkravStore).delkrav);
+    }, error => console.log('Kunde inte skapa delkrav.'), 
+       ()    => console.log('Klar med tilläggning'));
+  }
 }
