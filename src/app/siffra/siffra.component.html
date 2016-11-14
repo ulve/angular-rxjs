@@ -1,0 +1,12 @@
+<div class="component component--new">
+  <h2 class="component__header component__header--new">Siffra</h2>
+  <p>Senaste: {{siffror | async}}</p>
+  <p>Historik:</p>
+  <ul>
+    <li *ngFor="let d of sifferhistorik | async">
+      {{ d }} 
+    </li>
+  </ul>
+    <button class="component__button" (click)="onClick()">Lägg till</button>
+
+</div>

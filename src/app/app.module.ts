@@ -7,12 +7,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DelkravComponent } from './delkrav/delkrav.component';
 import { Delkrav2Component } from './delkrav2/delkrav2.component';
+import { SiffraComponent } from './siffra/siffra.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DelkravComponent,
-    Delkrav2Component
+    Delkrav2Component,
+    SiffraComponent
   ],
   imports: [
     BrowserModule,

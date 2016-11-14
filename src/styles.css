@@ -72,7 +72,9 @@ li {
     margin-top: 0;
     border-bottom: thin solid #CC4425;
     padding-bottom: 0.5rem;
+	text-transform: uppercase;
 }
+
 
 .component__header--new {
     color:darkorange;
