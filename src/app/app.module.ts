@@ -9,6 +9,7 @@ import { DelkravComponent } from './delkrav/delkrav.component';
 import { Delkrav2Component } from './delkrav2/delkrav2.component';
 import { SiffraComponent } from './siffra/siffra.component';
 import { IntervallComponent } from './intervall/intervall.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IntervallComponent } from './intervall/intervall.component';
     DelkravComponent,
     Delkrav2Component,
     SiffraComponent,
-    IntervallComponent
+    IntervallComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
