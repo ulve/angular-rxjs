@@ -19,6 +19,9 @@ export class DataService {
   private siffrorStore: {
     siffror: number;
   }
+
+  tick: Observable<number>;
+
   constructor(private http: Http) { 
     this.baseUrl = 'http://5820290b8b129a110026d7c6.mockapi.io/api/v1';
 
@@ -29,7 +32,9 @@ export class DataService {
     this.siffrorStore = {siffror: 0};
     this._siffror = <BehaviorSubject<number>> new BehaviorSubject(0);
     this.siffror = this._siffror.asObservable();
-  }
+
+    this.tick = Observable.interval(1000).map(d => Math.floor(Math.random() * 100 + 1));
+}
 
 
   loadAllDelkrav() {
